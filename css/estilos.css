@@ -16,10 +16,22 @@
 
 
 
+  
   .boton-eliminar{
     margin-right: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
 
   }
+
+
+  .eliminar{
+    width: 40px;
+  }
+
+
   #carrito-contenedor{
     max-height: 15rem;
     overflow-y: scroll;
