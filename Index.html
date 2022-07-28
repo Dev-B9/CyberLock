@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER LOCK</title>
+    <link rel="icon" href="/images/image.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+
+</head>
+<body>
+
+    <header id="header">
+
+        <div class="container__header" data-aos="fade-right ">
+            <div class="logo">
+                <img src="images/logo.svg" alt="">
+                <h2>CYBER</h2>
+                <h3>LOCK</h3>
+             </div>
+             <div class="menu">
+              <i class="fas fa-bars" id="btn_menu"></i>
+              <div id="back_menu">
+                 
+              </div>
+
+                <nav class="container__nav"  id="nav"data-aos="fade-left" >
+                    <ul>
+                        <li><a id="selected" class="seccion" href="#home" class="active">HOME</a></li>
+                        <li><a class="seccion" href="#academia">ACADEMIA</a></li>
+                        <!-- <li><a href="#">CENTRO DE AYUDA</a></li> -->
+                        <!-- <li><a class="seccion" href="./login.html">ENTRAR</a></li> -->
+                        <!-- <li><a class="seccion" href="#">REGISTRARSE</a></li> -->
+                        <li id="boton-carrito">
+                          <a href="#"  class="cart"><img class="cart" src="images/shop.svg" alt="" ></a>
+                          <div class= "container-product">
+                          <p id="count-product" >0</p>
+                        </div>
+                        </li>
+
+                    </ul>
+                </nav>
+             </div>
+        </div>
+
+    </header>
+
+
+    <main class="main" id="home">
+      <div  class="container-main"   >
+        <div class="container__info" data-aos="fade-right" data-aos-duration="1500">
+            <h1 class="text"> CYBERLOCK </h1>
+            <h2>CYBER SECURITY</h2>
+            <h3>ACADEMY</h3>
+            <p>Somos CYBERLOCK una academia de ciberseguridad cuya actividad principal es brindarle el mejor servicio y cursos para que puedas construir un alto nivel de aprendizaje en este campo tan demandado a nivel mundial.</p>
+            
+            <button>Adquirir Cursos</button>
+        </div>
+        <div class="container-logo" data-aos="fade-left" data-aos-duration="1500">
+            <img src="/images/logo.svg" alt="">
+        </div>
+    </main>
+
+
+
+
+         <!-- SECCION TEXTO EN MOVIMIENTO -->
+    <section class="running" id="academia">
+      <marquee  behavior="alternate"  direction="right" scrollamount="5" loop="infinite">
+        <p>NO SEAS UNA VICTIMA MÁS</p>
+        <img src="/images/globe 2.png" alt="">
+        <p>NO SEAS UNA VICTIMA MÁS</p>
+        <img src="/images/globe 2.png" alt="">
+        <p>NO SEAS UNA VICTIMA MÁS</p>
+        <img src="/images/globe 2.png" alt="">
+        <p>NO SEAS UNA VICTIMA MÁS</p>
+        <img src="/images/globe 2.png" alt="">
+        <p>NO SEAS UNA VICTIMA MÁS</p>
+        <img src="/images/globe 2.png" alt="">
+        <p>NO SEAS UNA VICTIMA MÁS</p>
+        <img src="/images/globe 2.png" alt="">
+      </marquee>
+    </section >
+        <!-- TERMINA SECCION TEXTO EN MOVIMIENTO -->
+
+
+
+        
+ <!-- SECCION DISCOVER PRODUCTS -->
+    <section class="prooductsSection" >
+
+      
+      <section  class="titleP">
+        <h1 class="titlePro">Descubre Nuestra Academia</h1>
+      </section>      
+      
+      
+      
+      
+      <!-- SECCION FILTROS Y NUEVO PRODUCTO -->
+          
+        <section class="desplegable">
+      
+          <!-- filtrar por precio - categorias -->
+      
+          <select name="" id="filterXPrice">
+              <option value="">Filtrar Por Precios</option>
+              <!-- <option value="Menos de 100">Menos de 100</option> -->
+              <option value="Entre 100 y 300">Entre 100 y 300</option>
+              <option value="Entre 400 y 900">Entre 400 y 900</option>
+              <option value="Entre 1.000 y 1.200">Entre 1.000 y 1200</option>
+          </select>
+      
+          <!-- filtro categoria -->
+          <select name="" id="filterXCategorie">
+              <option value="">Rango De Conocimiento</option>
+              <!-- <option value="Menos de 100">Menos de 100</option> -->
+              <option value="Principiante">Principiante</option>
+              <option value="Intermedio">Intermedio</option>
+              <option value="Avanzado">Avanzado</option>
+          </select>
+      
+
+          <!-- LISTA PRODUCTOS -->
+
+          <!-- <select name="" id="select-products">
+            <option value="" class="selected-product"></option>
+          </select> -->
+          
+        <!-- TERMINA LISTA PRODUCTOS -->
+          <!-- Parte de Agregar un nuevo Producto -->
+          <div class="modal" >
+
+            
+            <button id="close-modal" >X</button>
+            <input type="text" id="new-product" placeholder="Nombre de Producto">
+            <input type="text" id="new-price" placeholder="Precio de Producto">
+            <input type="text" id="new-categorie" placeholder="Nombre de Categoria">
+            <input type="text" id="new-info" placeholder="Informacion Del Curso">
+            <input  type="button" id="new-image" value="Insertar Portada Curso"  >
+            <input type="button" id="new-image2" value="Insertar logo curso" >
+            <button id="btn-new-create">Crear Nuevo Objeto</button>
+          
+          </div>
+      
+          <!-- de la misma parte de agregar, pero aparte del div -->
+          <button id="btn-create">Crear Nuevo Producto</button>
+      
+      
+        </section>
+      
+      <!-- TERMINA SECCION FILTROS Y NUEVO PRODUCTO -->
+       
+    <!-- SECCION MODAL COMPRAS -->
+    <div class="modal-contenedor">
+      <div class="modal-carrito">
+        <h3>Carrito</h3>
+
+            <table id="tabla1">
+                <thead class="head-t1">
+                  <tr class="conteTable">
+                      <th class="producto">Referencia</th>
+                      <th class="fila3">Producto</th>
+                      <th class="fila4">Precio</th>
+                      <th class="fila5">Cantidad</th>
+                  </tr>
+                </thead>
+  
+                <tbody id="container-table">
+                  <td>
+                    <tr></tr>
+                  </td>
+                </tbody>
+
+            </table>
+
+    <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+    <div id="carrito-contenedor">
+
+    </div>
+    <div class="contain">
+        <p class="precioProducto"> Precio Total: 
+          <span id="precioTotal">0</span>
+          <button id="vaciar-carrito" class="boton-agregar">Vaciar Carrito</button>
+        </p>
+      </div>
+    
+      </div>
+    </div>
+    <!-- TERMINA SECCION MODAL COMPRAS -->
+
+
+      <!-- SECCION DE CARDS -->
+        <main id="container__card">
+      
+        </main>
+      <!-- TERMINA SECCION DE CARDS -->
+
+      
+    </section>
+  <!-- TERMINA SECCION DISCOVER PRODUCTS -->
+
+       
+
+
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="/js/menu.js"></script>
+  <script src= "/js/modal.js"></script>
+<script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+
+  <script type="module" src="/js/app.js"></script>
+  <script type="module" src="/js/firebase.js"></script>
+  <!-- <script type="module"src="/js/pruebaLocalS.js"></script> -->
+  <!-- <script type="module"src="/js/pruebaFB.js"></script> -->
+</body>
+</html>

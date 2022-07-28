@@ -1,0 +1,153 @@
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-left: 36px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+/* .menu nav img{
+    display: none;
+} */
+
+.menu #btn_menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 720px){
+
+    
+
+    .logo{
+        margin-left: -30px;
+    }
+   
+    header .logo img{
+        width: 120px;
+    }
+
+    
+    .menu nav{
+        position: fixed;
+        top: 0px;
+        right: -280px;
+        width: 250px;
+        background-color: #3d4640e7 ;
+    
+        height: 60vh;
+        padding: 40px;
+        z-index: 1;
+        transition: all 300ms;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        margin-top: -10px;
+        
+    }
+
+    .menu ul li{
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .menu ul li a{
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+
+    .menu nav img{
+        display: block;
+        width: 60px;
+    }
+
+    #back_menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        
+        width: 500vw;
+        height: 500vh;
+        display: none;
+    }
+
+    .menu #btn_menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 24px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+
+    .menu #btn_menu:hover{
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+.main  .container__info h1{
+    font-size: 45px;
+    margin-left: 50px;
+}
+.main  .container__info h2{
+    font-size: 45px;
+    margin-top: -27px;
+    margin-left: 8px;
+
+
+}
+.main  .container__info h3{
+    font-size: 45px;
+    margin-top: -27px;
+    margin-left: 65px;
+
+}
+.main  .container__info p{
+    max-width: 300px;
+    font-size: 23px;
+    text-align: center;
+    margin-left: 16px;
+    
+
+}
+
+
+.titleP h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.main button{
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+
+}
+
+#container__card{
+    margin-left: 5px;
+
+}
+
+}
