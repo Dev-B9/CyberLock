@@ -91,8 +91,8 @@ function CloseModal() {
   newInfo.value=""
   newPrice.value=""
   newCategorie.value=""
-  newImage.value=""
-  newImage2.value=""
+  newImage.value="Insertar Portada Curso"
+  newImage2.value="Insertar logo curso"
   modal.style.display = 'none';
   
 }
