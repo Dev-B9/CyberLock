@@ -169,7 +169,7 @@ function createNewProduct () {
   const priceProducts = Number(newPrice.value);
   const categories = String(newCategorie.value);
   const information = String(newInfo.value);
-  const id = idProduct;
+  const id = 31;
   
 
   const productNew = {id: id, name: titleProduct, price: priceProducts, img:imgSelected, logoProduct: imgSelected2 , categorie:categories, info:information, quantity:1};
