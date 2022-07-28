@@ -117,7 +117,7 @@ header .logo{
 .container__nav{
     position: relative;
     height: 100%;
-    margin-left: 1%;
+    left: 15rem;
     
 }
 
