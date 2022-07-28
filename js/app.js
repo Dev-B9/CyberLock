@@ -464,9 +464,9 @@ const actualizarCarrito = () => {
 
     
 
-    const logRemoveCartP = document.createElement('i')
+    const logRemoveCartP = document.createElement('img')
     logRemoveCartP.classList.add('eliminar')
-    removeCartP.textContent="X"
+    logRemoveCartP.setAttribute('src','./images/trash.svg')
   
     
    
