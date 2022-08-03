@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   })
 });
 
-// const producto = JSON.parse(localStorage.getItem("products"))
+
 
 
 
@@ -36,12 +36,14 @@ const countProduct = document.getElementById('count-product')
 const containerProduct = document.getElementById('container-product')
 
 let countP = 0
-// const selectProducts = document.getElementById("select-products");
-// const boton1 = document.getElementsByClassName("button-buy");
+
 
 
 
 // filtros.
+
+
+
 const filterXPrice = document.getElementById('filterXPrice');
 const filterXCategories = document.getElementById('filterXCategorie');
 
@@ -52,6 +54,8 @@ const contenedorCarrito = document.getElementById('carrito-contenedor')
 
 const cantidadCart = document.getElementById('cantidad');
 const botonVaciar = document.getElementById('vaciar-carrito')
+
+
 
 // Agregar nuevo elemento.
 
@@ -76,12 +80,12 @@ const newInfo = document.getElementById('new-info')
 const btnNewProduct = document.getElementById('btn-new-create');
 
 
-// window.addEventListener('load', listSelect);
 
-// selectProducts.addEventListener('change', renderCards);
 
 
 // boton de crear nuevo elemento
+
+
 btnCreate.addEventListener('click', showModal);
 btnNewProduct.addEventListener('click', createNewProduct);
 closeModal.addEventListener('click', CloseModal)
@@ -105,9 +109,13 @@ newImage2.addEventListener('click', () => {
   widget_cloudinarys.open();
 }, false);
 
-// newImage2.addEventListener('change', widget_cloudinary);
 
-// funcion para entregarme la imagen para el nuevo elemento.
+
+
+// funcion para procesar la imagen cargada, la sube a cloudinary y me retorna el url de la imagen para guardarla en el nuevo elemento.
+
+
+
 
   let widget_cloudinary = cloudinary.createUploadWidget({
     cloudName: 'b9',
@@ -121,6 +129,9 @@ newImage2.addEventListener('click', () => {
         
     }
 });
+
+
+//se repite el codigo ya que necesitabamos cargar 2 imagenes (aun no se ha encontrado la solucion para no tener que reciclar codigo)
 
 
 let widget_cloudinarys = cloudinary.createUploadWidget({
@@ -138,29 +149,10 @@ let widget_cloudinarys = cloudinary.createUploadWidget({
 
 
 
-// funcion para entregarme la imagen para el nuevo elemento.
-
-//   let widget_cloudinary = cloudinary.createUploadWidget({
-//     cloudName: 'b9',
-//     uploadPreset: 'Prueba Cloud'
-// }, (err, result) => {
-//     if (!err && result && result.event  === 'success') {
-//         console.log('Imagen subida con éxito', result.info);
-//         imagen.src = result.info.secure_url ;
-//     //   const resultado = result.info.secure_ur
-//         imgSelected2 = result.info.secure_url
-//         console.log(imgSelected);
-//         comprobar()
-//     }
-// });
-
-
-
-
-
-
 
 // funcion al boton, para mis nuevos productos.
+
+
 function createNewProduct () {
 
   
@@ -222,10 +214,15 @@ function createNewProduct () {
 
 
 // hacer aparecer mi div para agregar elementos ya que se encuentra oculto.
+
+
+
 function showModal() {
   modal.style.display = 'flex';
 }
-
+-----------------
+  
+  //filtros
 
 function filterCategories(categorie){
  
@@ -243,6 +240,7 @@ function filterCategories(categorie){
   responser.map( Prcdt => createCards(Prcdt));
 
 }
+
 
 
 function filterProducts(event) {
@@ -266,11 +264,6 @@ function filterProducts(event) {
 
 }
 
-
-// function renderCards() {
-//   products.map( Prcdt => { Prcdt.name === selectProducts.value ? createCards(Prcdt) : null } );
- 
-// }
 
 
 
@@ -356,6 +349,8 @@ function  createCards(Prcdt) {
  
 // SECCION DEL CARRO DE COMPRAS
 
+  
+  
  // ACA EMPIEZA LA MODAL DE COMPRAS
 
  const boton = document.getElementById(`agregar${Prcdt.id}`)
