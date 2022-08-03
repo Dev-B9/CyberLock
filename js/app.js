@@ -220,7 +220,7 @@ function createNewProduct () {
 function showModal() {
   modal.style.display = 'flex';
 }
------------------
+//-----------------
   
   //filtros
 
